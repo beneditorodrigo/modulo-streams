@@ -7,7 +7,7 @@ public class Outros {
 
 	public static void main(String[] args) {
 		
-		Aluno a1 = new Aluno("Ana", 7.2);
+		Aluno a1 = new Aluno("Ana", 8.2);
 		Aluno a2 = new Aluno("Luna", 7.1);
 		Aluno a3 = new Aluno("Gui", 8.2);
 		Aluno a4 = new Aluno("Gabi", 10);
@@ -27,6 +27,13 @@ public class Outros {
 			.distinct()
 			.skip(2)
 			.limit(2)
+			.forEach(System.out::println);
+		
+		System.out.println("\ntakeWhile");
+		alunos.stream()
+			.distinct()
+			//.skip(2)
+			.takeWhile(a-> a.nota >= 7)
 			.forEach(System.out::println);
 	}
 
