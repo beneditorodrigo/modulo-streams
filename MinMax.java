@@ -7,7 +7,7 @@ import java.util.List;
 public class MinMax {
 
 	public static void main(String[] args) {
-		
+
 		Aluno a1 = new Aluno("Ana", 7.2);
 		Aluno a2 = new Aluno("Luna", 7.1);
 		Aluno a3 = new Aluno("Gui", 8.2);
@@ -24,5 +24,4 @@ public class MinMax {
 		System.out.println(alunos.stream().max(melhorNota).get());
 		System.out.println(alunos.stream().min(melhorNota).get());
 	}
-
 }
